@@ -22,9 +22,9 @@ print('The distance the car will travel in 10 hours',10 * 90)
 print('The distance the car will travel in 15 hours',15 * 90)
 print('The distance the car will travel in 2 hours and 25 minutes',145/60 * 90)
 
-miles = float(input("how many miles you drive:"))
+kilometers = float(input("how many miles you drive:"))
 gallons = float(input("how many gallons used:"))
-fuelconsumption = 100 * gallons / miles
-print(miles)
+fuelconsumption = 100 * gallons / kilometers
+print(kilometers)
 print(gallons)
 print(fuelconsumption)
