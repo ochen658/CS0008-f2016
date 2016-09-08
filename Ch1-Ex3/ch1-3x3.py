@@ -32,7 +32,7 @@ print(fuelconsumption)
 FTemperature = float(input('temperature in Fahrenheit:'))
 CTemperature = 5 * (FTemperature - 32) / 9
 print(CTemperature)
-
+#
 cookies = int(input('how many cookies you wnat to make:'))
 sugar = 300 / 48 * cookies
 buttes = 240 / 48 * cookies
