@@ -28,3 +28,7 @@ fuelconsumption = 100 * gallons / kilometers
 print(kilometers)
 print(gallons)
 print(fuelconsumption)
+
+FTemperature = float(input('temperature in Fahrenheit:'))
+CTemperature = 5 * (FTemperature - 32) / 9
+print(CTemperature)
