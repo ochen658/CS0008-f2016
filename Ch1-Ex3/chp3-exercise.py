@@ -12,3 +12,4 @@ if salary >= min_salary:
     print('you qualify for the loan')
 else:
     print('you must aat least earn', format(min_salary, ',.2f'),'per year to qualify')
+#
