@@ -22,10 +22,10 @@ print('The distance the car will travel in 10 hours',10 * 90)
 print('The distance the car will travel in 15 hours',15 * 90)
 print('The distance the car will travel in 2 hours and 25 minutes',145/60 * 90)
 
-kilometers = float(input("how many miles you drive:"))
+miles = float(input("how many miles you drive:"))
 gallons = float(input("how many gallons used:"))
-fuelconsumption = 100 * gallons / kilometers
-print(kilometers)
+fuelconsumption = 100 * gallons / miles
+print(miles)
 print(gallons)
 print(fuelconsumption)
 
@@ -37,6 +37,6 @@ cookies = int(input('how many cookies you wnat to make:'))
 sugar = 300 / 48 * cookies
 buttes = 240 / 48 * cookies
 flour = 330 / 48 * cookies
-print(sugar)
-print(flour)
-print(buttes)
+print('sugar you need:', sugar)
+print('flour you need:', flour)
+print('buttes you need:', buttes)
