@@ -26,8 +26,8 @@ elif form==2:
     distance_usc = distance_metric * 1.60934
     gas_metric = float(input('how much gas you used?'))
     gas_usc = gas_metric * 3.78541
-    consumption_metric = (100*distance_metric) / gas_metric
-    consumption_usc=gas_usc/distance_usc
+    consumption_metric = (100*gas_metric) / distance_metric
+    consumption_usc=distance_usc/gas_usc
     if consumption_metric > 20:
         consumption_rate = 'extremely poor'
     else:
