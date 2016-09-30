@@ -1,0 +1,5 @@
+# first I need to know which system the client want to use. Then I will start to write the program
+with the formula and equation to create variables. After that converting the unit system is important. Lasty, I need
+to compare the fuel consumption in order to give the car's feedback to user. Therefore, rating for their fule consumption
+is necessary. If the nuumber provided by the user were wrong, then I would print a string like'wrong number' to
+remind them to enter a correct number.
