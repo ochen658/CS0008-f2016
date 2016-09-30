@@ -1,22 +1,23 @@
 So the first test's datas that I put is 60miles and 3 gallons, and press 1 to use USC system.
 the result is that:
 
-Which system you wnat to use,usc press 1, metric press 2  1
+Which system you wnat to use,usc press 1, metric press 2 1
 how many miles you drove?60
 how much gas you used?3
-('                  ', 'USC', '                ', 'Metric')
-('distance___________: ', '60.000', 'miles', '37.282', 'km')
-('Gas________: ', '3.000', 'gallons', '0.793', 'Liters')
-('Consumption____: ', '20.000', 'mpg', '2.126', '1/100km')
+('                     ', 'USC', '                   ', 'Metric')
+('distance___________: ', '   60.000', 'miles', '   37.282', 'km')
+('Gas________: ', '    3.000', 'gallons', '    0.793', 'Liters')
+('Consumption____: ', '   20.000', 'mpg', '    2.126', '1/100km')
 ('Gas Consumption rate:', 'excellent')
+
 
 the second test's I press 2 to use metric system, and I put 800km and 10liters
 the result is that:
 Which system you wnat to use,usc press 1, metric press 2  2
 how many km you drove?800
 how much gas you used?10
-('                  ', 'USC', '               ', 'Metric')
-('distance___________: ', '1287.472', 'miles', '800.000', 'km')
-('Gas________: ', '37.854', 'gallons', '10.000', 'Liters')
-('Consumption____: ', '34.011', 'mpg', '1.250', '1/100km')
+('                     ', 'USC', '                   ', 'Metric')
+('distance___________: ', ' 1287.472', 'miles', '  800.000', 'km')
+('Gas________: ', '   37.854', 'gallons', '   10.000', 'Liters')
+('Consumption____: ', '   34.011', 'mpg', '    1.250', '1/100km')
 ('Gas Consumption rate:', 'excellent')

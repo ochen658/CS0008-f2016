@@ -16,10 +16,10 @@ if form==1:
         elif consumption_metric <= 10 and consumption_metric > 8:
             consumption_rate = 'good'
         else: consumption_rate='excellent'
-    print('                  ','USC','                ','Metric')
-    print("distance___________: ", format(distance_usc,'.3f'), 'miles', format(distance_metric,'.3f'), 'km')
-    print('Gas________: ', format(gas_usc,'.3f'), 'gallons', format(gas_metric,'.3f'), 'Liters')
-    print('Consumption____: ', format(consumption_usc,'.3f'), 'mpg', format(consumption_metric,'.3f'), '1/100km')
+    print('                     ','USC','                   ','Metric')
+    print("distance___________: ", format(distance_usc,'9.3f'), 'miles', format(distance_metric,'9.3f'), 'km')
+    print('Gas________: ', format(gas_usc,'9.3f'), 'gallons', format(gas_metric,'9.3f'), 'Liters')
+    print('Consumption____: ', format(consumption_usc,'9.3f'), 'mpg', format(consumption_metric,'9.3f'), '1/100km')
     print('Gas Consumption rate:',consumption_rate)
 elif form==2:
     distance_metric = float(input('how many km you drove?'))
@@ -38,8 +38,8 @@ elif form==2:
         elif consumption_metric <= 10 and consumption_metric > 8:
             consumption_rate = 'good'
         else: consumption_rate='excellent'
-    print('                  ', 'USC', '                ', 'Metric')
-    print("distance___________: ", format(distance_usc, '.3f'), 'miles', format(distance_metric, '.3f'), 'km')
-    print('Gas________: ', format(gas_usc,'.3f'), 'gallons', format(gas_metric,'.3f'), 'Liters')
-    print('Consumption____: ', format(consumption_usc, '.3f'), 'mpg', format(consumption_metric, '.3f'), '1/100km')
+    print('                     ', 'USC', '                   ', 'Metric')
+    print("distance___________: ", format(distance_usc, '9.3f'), 'miles', format(distance_metric, '9.3f'), 'km')
+    print('Gas________: ', format(gas_usc,'9.3f'), 'gallons', format(gas_metric,'9.3f'), 'Liters')
+    print('Consumption____: ', format(consumption_usc, '9.3f'), 'mpg', format(consumption_metric, '9.3f'), '1/100km')
     print('Gas Consumption rate:', consumption_rate)
