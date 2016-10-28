@@ -1,0 +1,5 @@
+    First creat a main function and set a global variable as file. In the main function set two accumulators
+for the use of total distance, partial distance, and total number of lines and partial numbers of lines. Then add
+the partial lines and distances together and output.
+And then create a process file to process the data that is opend by the user.
+At last create a function to format the ouput of the data.
