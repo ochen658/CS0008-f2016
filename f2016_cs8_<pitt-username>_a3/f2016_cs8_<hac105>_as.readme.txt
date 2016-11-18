@@ -2,4 +2,4 @@ First we need to define a main function and creat an empty list to put every dat
 to count for the line and key value of the data files. And then we need to create some for loops to add the number of
 keys of the three files together and the total distance of the three files together. Define another function in order to
 sort out the maximum value and the minimum value in the files. Lastly, I create another list for those participants have
-multiple records. And output and print everything.
+multiple records. And output and print everything. We can get the result of these three files.
