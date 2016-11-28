@@ -1,4 +1,10 @@
+#
+# MN: header with user, instructor and course info is missing
+#
+# Notes:
+# MN: no comments at all?
 
+# MN: what does this function do?
 def main():
  total_lines = 0
  total_distance = 0
@@ -17,7 +23,7 @@ def main():
  printKV('Total distance run',total_distance)
 
 
-
+# MN: what does this function do?
 def processfile1(fh):
      current_total_distance = 0
      current_lines= 0
@@ -30,7 +36,7 @@ def processfile1(fh):
      return (current_lines, current_total_distance)
 
 
-
+# MN: what does this function do?
 def printKV (key, value, klen=0):
     KL= max(len(key),klen)
     if isinstance(value, str):
