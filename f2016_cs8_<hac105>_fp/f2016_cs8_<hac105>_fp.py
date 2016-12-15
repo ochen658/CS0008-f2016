@@ -1,3 +1,4 @@
+# get a class
 class participant:
 
     name = "don't know"
@@ -29,7 +30,6 @@ class participant:
             if distance > 0:
                 self.distance += distance
                 self.runs += 1
-
 
     # This function will return the name of the participant
     def getName(self):
@@ -64,16 +64,14 @@ def getDataFromFile(file):
     output = []
     # read file line
     for line in open(file,'r'):
-        # exclude first line that is the header
-        # we can recongize it because it contains the word "distance"
+        #first line that is the header
         if "distance" in line:
-            # skip line
             continue
         # remove \n ending the line and split line at ","
         temp1 = line.rstrip('\n').split(',')
         # use try/except to avoid unhendled errors
         try:
-            # append record to output list in the form of a dictionary with 2 keys: name and distance
+            # append record to output list with name and distance
             # remove spaces from name and convert distance to float
             output.append({'name': temp1[0].strip(' '), 'distance':float(temp1[1])})
         except:
@@ -85,32 +83,31 @@ def getDataFromFile(file):
 # ask for master file from user
 masterFile = input("Enter the master file : ")
 
-# read master file and extract data files
+# This part will read master file and get data files
 try:
     dataFiles = [file.rstrip('\n') for file in open(masterFile,'r')]
 except:
     print("Sorry I can't read master file or invalid file name")
     exit(1)
 
-rawData = sum([getDataFromFile(file) for file in dataFiles],[])
+z = sum([getDataFromFile(file) for file in dataFiles],[])
 
-numberFiles = len(dataFiles)
+number_Files_being_read = len(dataFiles)
 
 
 # total number of lines read by using len()
 
-totalLines = len(rawData)
+totalLines = len(z)
 
-#
 # total number distance run by every participant is
 # the sum of the "distance" element of the items in the list datas.
-totalDistanceRun = sum([item['distance'] for item in rawData])
+totalDistanceRun = sum([item['distance'] for item in z])
 
 # create an empty dictionary
 participants = {}
 
 # loops on all the records
-for item in rawData:
+for item in z:
     if not item['name'] in participants.keys():
         participants[item['name']] = participant(item['name'])
     # insert distance in the list for this participant
@@ -138,18 +135,17 @@ for name, object in participants.items():
         maxDistance['name'] = name
         maxDistance['distance'] = distance
 
-    # get number of runs, aka apparences from participant object
-    participantAppearences = object.getRuns()
+    # get number of runs, shows from participant object
+    participant_shows = object.getRuns()
     #
     # check if we need to initialize this entry
-    if not participantAppearences in apparences.keys():
-        apparences[participantAppearences] = []
-    apparences[participantAppearences].append(name)
+    if not participant_shows in apparences.keys():
+        apparences[participant_shows] = []
+    apparences[participant_shows].append(name)
 # end for
 
 #
-# compute total number of participant
-# this is equivalent to the length of the participantDistances
+# compute total number of participant which is the length of the participantDistances
 total_Participant = len(participants);
 
 #use the len() method to count the total number of participants
@@ -163,7 +159,7 @@ STRING = '20s'
 
 #output
 print("")
-print(" Number of Input files read   : " + format(numberFiles,INTEGER))
+print(" Number of Input files read   : " + format(number_Files_being_read,INTEGER))
 print(" Total number of lines read   : " + format(totalLines,INTEGER))
 print("")
 print(" Total distance run           : " + format(totalDistanceRun,FLOAT))
@@ -187,6 +183,6 @@ fh.write('name,records,distance\n')
 for name, object in participants.items():
     fh.write(object.converttocsv() + '\n')
 fh.close()
-
+#file closed
 
 
