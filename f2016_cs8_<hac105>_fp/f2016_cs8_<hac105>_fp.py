@@ -183,6 +183,7 @@ fh.write('name,records,distance\n')
 for name, object in participants.items():
     fh.write(object.converttocsv() + '\n')
 fh.close()
+
 #file closed
 
 
