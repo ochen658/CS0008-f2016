@@ -17,6 +17,7 @@ def main():
     more_than_once = []
     total_distance = 0
     number_of_line = 0
+<<<<<<< b0e56a2029ff516d44afd3cedbc4537e634300ff:f2016_cs8_hac105_a3/f2016_cs8_hac105_a3.py
     #
     # MN: output file should be named f2016_cs8_hac105_a3.data.output.csv
     #a = open('f2016_cs8_<hac105>_a3.data.output.csv', 'w')
@@ -26,6 +27,10 @@ def main():
     a.write('/Users/macbookpro/PycharmProjects/CS0008-f2016/Ch1-Ex3/f2016_cs8_a3.data.1.csv\n')
     a.write('/Users/macbookpro/PycharmProjects/CS0008-f2016/Ch1-Ex3/f2016_cs8_a3.data.2.csv\n')
     a.write('/Users/macbookpro/PycharmProjects/CS0008-f2016/Ch1-Ex3/f2016_cs8_a3.data.3.csv\n')
+=======
+    a = open('f2016_cs8_<hac105>_a3.data.output.csv', 'w')
+   
+>>>>>>> assignment 2 python programe:f2016_cs8_<hac105>_a3/f2016_cs8_<hac105>_a3.py
     a.close()
     #
     # MN: why do you open a file named: monster input file.cvs?
