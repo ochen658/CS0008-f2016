@@ -1,0 +1,12 @@
+First we need to start a class definition and set the properties of name and distance.
+Then we use the initializer method and then we use the addDistance method to add all the distance together, and we
+need to get a for loop in this function to iterate the distance so the data will be added.
+Use getName function to return the name of the participants. Ans getDistance, and getRuns function to return the
+value. Then we use len() to get the total participants and those people who have multiple records. And we use
+min and max to find the minimum and maximum value in the files. Finally we set the string in the right format and
+create an output file in the end.
+
+PS: when I run the program, I typed in the data text file which contains the three names of the three
+cvs data files. But it can not be read in pycharm. So when I try to run on idle, it works. So i decided to
+change the data text file with the three path ways of the three cvs data files. So when you run my program
+please copy the path way of the data txt file. 

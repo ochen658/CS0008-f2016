@@ -1,3 +1,10 @@
+# name       : Hanping Chen
+# email      : hac105@pitt.edu
+# date       : 2016/12/15
+# class      : CS0008-f2016
+# instructor : Max Novelli
+
+
 # get a class
 class participant:
 
@@ -119,8 +126,8 @@ for item in z:
 minDistance = { 'name' : None, 'distance': None }
 # maximum distance run with name
 maxDistance = { 'name' : None, 'distance': None }
-# appearences dictionary
-apparences = {}
+# create an empty dictionary
+multiple_records = {}
 #
 # computes the total distance run for each participant iterating on all the participants
 for name, object in participants.items():
@@ -139,9 +146,9 @@ for name, object in participants.items():
     participant_shows = object.getRuns()
     #
     # check if we need to initialize this entry
-    if not participant_shows in apparences.keys():
-        apparences[participant_shows] = []
-    apparences[participant_shows].append(name)
+    if not participant_shows in multiple_records.keys():
+        multiple_records[participant_shows] = []
+    multiple_records[participant_shows].append(name)
 # end for
 
 #
