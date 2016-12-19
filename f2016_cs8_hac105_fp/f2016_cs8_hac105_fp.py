@@ -67,6 +67,7 @@ class participant:
 
 # use getDataFromFlie method
 def getDataFromFile(file):
+    print(file)
     # create an empty list
     output = []
     # read file line
